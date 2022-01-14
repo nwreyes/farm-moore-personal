@@ -33,35 +33,33 @@ Our project idea is to create a game in which the player will manage a farm, whi
         * ![main menu actual](assets/READMEMAIN.png)
 * Main Menu (Actual):
 * CONTAINS:
-* Play button: 
-    *   Begins the game
-* Exit Button:
-    *   Exits the game
+    * Play button: 
+        * Begins the game
+    * Exit Button:
+        * Exits the game
 
-        * ![gameplay screen idea](assets/READMEOLDPLAY.png)
+![gameplay screen idea](assets/READMEOLDPLAY.png)
 * CONTAINS:
-* Plots:
-    *  5x5 grid of plants to plant seeds in 
-* RENT:
-    *  Contained a Cash Quota to reach in a certain number of 'days'.
-* Timer:
-    *  Contained a timer of the current day
+    * Plots:
+        * 5x5 grid of plants to plant seeds in 
+    * RENT:
+        * Contained a Cash Quota to reach in a certain number of 'days'.
+    * Timer:
+        * Contained a timer of the current day
 * ORDERS:
     *  Contained customer orders the player had to fufill
 * INVENTORY:
     *  Displayed a hotbar of items that the player could use to affect the game
 * Market:
     *  Where "Moore" Customers entered the shop and asked for plant orders. 
-* w
         * ![gameplay screen actual](assets/READMEPLAY.png)
 * CONTAINS:
-* Plots:
-    *  2x2 grid of plants to plant seeds in 
-* Market:
-    *  Where a "Moore" Customer entered the shop and asked for plant orders. 
-* Quit Button:
-    *  Exits the game, pulls quit screen
-* '
+    * Plots:
+        * 2x2 grid of plants to plant seeds in 
+    * Market:
+        * Where a "Moore" Customer entered the shop and asked for plant orders. 
+    * Quit Button:
+        * Exits the game, pulls quit screen
         * ![quit screen](assets/READMEQUIT.png)
 * Quit Button:
     *  Exits the game.
