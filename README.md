@@ -20,17 +20,20 @@ Our project idea is to create a game in which the player will manage a farm, whi
 
 ## User Interface Design *(Front End Specialist)*
 * Luca DiGrigoli
-        * ![main menu idea](assets/READMEOLDMAIN.png)
+
+- ![main menu idea](assets/READMEOLDMAIN.png)
+
 * Main Menu (Concept):
 * CONTAINS:
 * Play button: 
-    *   Begins the game
+    * Begins the game
 * Exit Button:
-    *   Exits the game
+    * Exits the game
 * Option Button:
-    *   Opens a hypothetical option game.
+    * Opens a hypothetical option game.
 
-        * ![main menu actual](assets/READMEMAIN.png)
+![main menu actual](assets/READMEMAIN.png)
+
 * Main Menu (Actual):
 * CONTAINS:
     * Play button: 
