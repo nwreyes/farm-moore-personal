@@ -166,10 +166,13 @@ class Controller:
         return: None
         """
         #Establishing variables for later use
+
+        #For the JSON
         self.plants_sold = 0
         self.currency = 0
         start_time = time.time()
 
+        #For simulating plant growth
         growth_time1 = 0
         growth_time2 = 0
         growth_time3 = 0
@@ -182,7 +185,7 @@ class Controller:
 
         while self.state == "GAME":
           
-          #Creating a currency display that updates; needs to be here to that it can update as the currency does
+          #Creating a currency display that updates; needs to be here so that it can update as the currency does
           self.currencyButton = newbutton.NewButton((252,186,3),600,50,200,50, str(self.currency))
 
           #Growth simulation 
@@ -436,12 +439,15 @@ class Controller:
             for item in self.plots:
               item.drawPlant()
 
+            #Checks if the customer has left; if so creates a new customer and if not it continues drawing the customer
             if self.customers == 0:
               self.local = customer.Customer("Steve", 1000, 0, 100, 100, self.screen)
               self.customers = 1
             if self.customers != 0:
               self.local.drawCustomer()
               self.local.enter(25)
+            
+            #Gets the customer to leave if a plant has been sold
             if customer_served:
               self.local.leave(25)
               if self.local.on_screen is False:
@@ -464,6 +470,7 @@ class Controller:
 
               pos = pygame.mouse.get_pos()
 
+              #Exits the game if the exit button is selected
               if event.type == pygame.MOUSEBUTTONDOWN:
                 if self.quitButton.isOver(pos):
                   pygame.quit()
@@ -474,6 +481,7 @@ class Controller:
                   json_print = json.dump(self.entry, self.scores)
                   self.scores.close()
 
+                  #Displays information held in the JSON file
                   print("\n#### Previous Player Scores ####")
 
                   file_ptr = open("src/past_players.json", "r")
